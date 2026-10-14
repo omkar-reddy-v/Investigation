@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #102144; background: #fff; font-size: 14px; }
+.page { width: 100%; max-width: 1480px; margin: 0 auto; padding: 11px 16px 18px; }
+.panel { border: 1px solid #d6e0ed; border-radius: 6px; margin-bottom: 11px; padding: 12px 15px 14px; background: #fff; }
+.panel h2 { font-size: 16px; margin: 0 0 9px; font-weight: 700; line-height: 1.3; }
+.dropzone { border: 2px dashed #cddced; background: #f8fbff; height: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer; border-radius: 5px; gap: 2px; }
+.dropzone.dragging { border-color: #1763ef; background: #eaf3ff; }
+.pdf-symbol { font-size: 28px; margin-bottom: 2px; }
+.dropzone small { color: #5b6b87; font-size: 13px; }
+.selected-file { border: 1px solid #d1dceb; background: #f8fbff; display: flex; align-items: center; gap: 14px; border-radius: 5px; padding: 8px 11px; margin-top: 9px; min-height: 55px; }
+.file-icon { background: #e92326; color: #fff; font-size: 10px; font-weight: 700; padding: 12px 5px 6px; border-radius: 3px; }
+.file-title { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.remove-file { background: none; border: 0; color: #14274b; font-size: 24px; cursor: pointer; padding: 0 10px; }
+.extract-button.MuiButton-root, .submit-footer .MuiButton-root { background: #1765f5; color: #fff; text-transform: none; border-radius: 4px; min-width: 137px; height: 37px; }
+.two-cols { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 22px; align-items: start; padding: 0 6px; }
+.field-stack { display: flex; flex-direction: column; gap: 12px; }
+.field { display: flex; flex-direction: column; gap: 5px; min-width: 0; color: #2d456e; }
+.field select, .field textarea { width: 100%; border: 1px solid #c8d5e7; border-radius: 5px; background: #fff; font: inherit; font-size: 14px; color: #102144; padding: 7px 14px; outline-color: #1765f5; }
+.field select { height: 34px; cursor: pointer; }
+.field textarea { height: 77px; resize: none; line-height: 1.45; }
+.conclusion-panel { padding-bottom: 4px; }
+.conclusion-subtitle { margin: -2px 6px 5px; color: #2d456e; }
+.review-warning { margin: 8px 6px 4px; background: #fff3dc; color: #dc7800; border-radius: 3px; padding: 7px 11px; }
+.submit-footer { display: flex; justify-content: flex-end; padding: 2px 5px 0; }
+.submit-footer .MuiButton-root.Mui-disabled { background: #1765f5; color: #fff; opacity: .55; }
+@media (max-width: 680px) { .page { padding: 8px; } .two-cols { grid-template-columns: 1fr; gap: 12px; padding: 0; } .selected-file { gap: 7px; } .extract-button.MuiButton-root { min-width: 85px; } }
